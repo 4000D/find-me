@@ -5,7 +5,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
-const q = require('Q');
+const q = require('q');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/find_me');
 db = mongoose.connection;

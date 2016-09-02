@@ -19,6 +19,7 @@ const users = require('./routes/users');
 const apiresponse = require('./routes/APIResponses');
 const mloutputs = require('./routes/MLOutputs');
 const bases = require('./routes/Bases');
+const tmp = require('./routes/tmp');
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use('/users', users);
 app.use('/apiresponses', apiresponse);
 app.use('/mloutputs', mloutputs);
 app.use('/bases', bases);
+app.use('/tmp', tmp);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -16,7 +16,6 @@ mongoose.Promise = q.Promise;
 
 const routes = require('./routes/index');
 const users = require('./routes/users');
-const apiresponse = require('./routes/APIResponses');
 const mloutputs = require('./routes/MLOutputs');
 const bases = require('./routes/Bases');
 const tmp = require('./routes/tmp');
@@ -37,7 +36,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/apiresponses', apiresponse);
 app.use('/mloutputs', mloutputs);
 app.use('/bases', bases);
 app.use('/tmp', tmp);

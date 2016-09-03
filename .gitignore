@@ -1,3 +1,5 @@
 node_modules/
 .idea/
-
+mloutputs/processed/
+mloutputs/error-processed/
+mloutputs/not-processed/

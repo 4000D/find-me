@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start-forever": "forever start lib/csv-watcher.js && forever start bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
     "async": "^2.0.1",
     "body-parser": "~1.13.2",
+    "chokidar": "^1.6.0",
     "cookie-parser": "~1.3.5",
     "csv-parser": "^1.11.0",
     "debug": "~2.2.0",
@@ -20,6 +22,7 @@
     "mongoose": "^4.5.10",
     "morgan": "^1.6.1",
     "multer": "^1.2.0",
+    "promise.prototype.finally": "^2.0.0",
     "q": "^1.4.1",
     "querystring": "^0.2.0",
     "request": "^2.74.0",
